@@ -202,3 +202,55 @@ nav {
     align-items: stretch;
     height: 70px;
 }
+
+form {
+    width: 550px;
+    display: grid;
+}
+
+form h1 {
+    text-align: center;
+}
+
+form input {
+    width: 550px;
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 35px;
+    text-align: center;
+    background: #000;
+    border-style: none;
+    color: #fff;
+}
+
+form select {
+    width: 557px;
+    height: 40px;
+    border-radius: 35px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    border-style: none;
+}
+
+form textarea {
+    width: 554px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 35px;
+    background: #000;
+    border-style: none;
+}
+
+form #btn-submit {
+    width: 100px;
+}
+
+footer {
+    height: 50px;
+    
+}
+
+/* input::-moz-focus-inner {
+    background: #6939ff;
+} */
