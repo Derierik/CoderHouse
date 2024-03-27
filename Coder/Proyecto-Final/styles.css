@@ -1,12 +1,17 @@
 body {
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
     margin: 0;
     height: 100hv;
     background: #1a2027;
     color: #fdfcfd;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
+}
+
+body main {
+    display: grid;
+    justify-content: center;
 }
 
 ul {
@@ -240,6 +245,7 @@ form textarea {
     border-radius: 35px;
     background: #000;
     border-style: none;
+    resize: none;
 }
 
 form #btn-submit {
@@ -247,10 +253,104 @@ form #btn-submit {
 }
 
 footer {
-    height: 50px;
-    
+    background: #08162c;
+    padding-top: 60px;
 }
 
+section.top > img {
+    height: 50px;
+    margin: 0 auto 50px;
+}
+
+section {
+    position: relative;
+    margin: 0 30px;
+}
+
+section.top {
+    display: grid;
+    border-bottom: 
+        2px solid
+        rgb(255, 255, 255, 20%);
+    padding-bottom: 20px;
+}
+
+section.top .links {
+    display: grid;
+    grid-template-columns: 
+        repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+section.top .links-column {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    font-weight: 400;
+    color: #fff9ff;
+}
+
+section.top h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff9ff;
+}
+
+section.top p {
+    margin: 0;
+}
+
+section.top .socials {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    translate: -50% 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 56px;
+}
+
+section.top .socials > a {
+    font-size: 20px;
+    background: 
+        rgb(45, 118, 232 / 25%);
+    color: #fff9ff;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.socials-column:is(h2, p) {
+    display: none;
+}
+
+section.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 8px;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.legal > a {
+    margin: 0 0 0 4px;
+}
+
+.legal, .copyright {
+    font-size: 12px;
+}
+
+.legal > span {
+    margin-right: 10px;
+}
 /* input::-moz-focus-inner {
     background: #6939ff;
 } */
