@@ -1,5 +1,5 @@
 body {
-    /* display: grid; */
+    display: grid;
     margin: 0;
     height: 100hv;
     background: #1a2027;
@@ -10,10 +10,9 @@ body {
     font-size: 18px;
 }
 
-main {
-    width: fit-content;
+body main {
+    display: flex;
     justify-content: center;
-    margin-left: 500px;
 }
 
 ul {
@@ -117,6 +116,7 @@ nav {
     background: #121017;
     border-radius: 24px;
     margin-bottom: 20px;
+    margin-left: 30px;
     display: inline-block;
 }
 
