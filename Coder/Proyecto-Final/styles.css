@@ -13,6 +13,7 @@ body {
 body main {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -112,9 +113,9 @@ main .competencias, .viajes{
     float: left;
 }
 
-main .viajes {
+/* main .viajes {
     margin-left: 60px;
-}
+} */
 
 .card {
     display: flex;
