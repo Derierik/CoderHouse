@@ -14,6 +14,7 @@ body main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
 ul {
@@ -331,10 +332,11 @@ section.bottom {
     .card {
         margin: 0 40px;
         margin-bottom: 80px;
+        margin-top: 80px;
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 60px;
-        width: 100%;
+        width: 60%;
         text-align: center;
         flex-direction: column;
     }
@@ -352,15 +354,15 @@ section.bottom {
 
 @media (width <= 440px) {
 
-    body main {
-        display: grid;
-    }
-
     .card img {
         height: 45vw;
         width: 45vw;
         border-radius: 50%;
         margin-top: -140px;
+    }
+    
+    .card {
+        margin-right: 50px;
     }
 }
 
