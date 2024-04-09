@@ -1,0 +1,26 @@
+body {
+    font-family: Poppins;
+    color:#f9f9f9;
+    background-image: url(bg.jpg);
+}
+
+.burger, .menu {
+    position: fixed;
+}
+
+.burger{
+    z-index: 4;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 88px;
+    height: 88px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    background-image: url("./icons/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
