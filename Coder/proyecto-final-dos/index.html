@@ -7,17 +7,27 @@
         <title>Document</title>
     </head>
     <body>
-        <button class="burger" onclick="toggleMenu()">
-        </button>
-        <div class="background"></div>
-        <div class="menu">
-            <nav>
-            <a style="animation-delay: 0.2s">
-                About</a>
-            <a style="animation-delay: 0.3s">
-                Gallery</a>
-            </nav>
-        </div>
+        <nav>
+            <button class="burger" onclick="toggleMenu()">
+            </button>
+            <div class="background"></div>
+            <div class="menu">
+                <nav>
+                <a style="animation-delay: 0.2s">
+                    About</a>
+                <a style="animation-delay: 0.3s">
+                    Gallery</a>
+                </nav>
+            </div>
+        </nav>
+        <main>
+            <div class="card">
+                <img src="../Proyecto-Final/imagenes/climbing-tour-start-one.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="../Proyecto-Final/imagenes/climbing-tour-running.jpg" alt="">
+            </div>
+        </main>
         <script type="text/javascript">
             const toggleMenu = 
                 () => document.body
