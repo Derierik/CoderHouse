@@ -114,9 +114,9 @@ main .competencias, .viajes{
     float: left;
 }
 
-/* main .viajes {
-    margin-left: 60px;
-} */
+main section {
+    height: 400px;
+}
 
 .card {
     display: flex;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function myfunction(){
+        document.getElementById("demo").innerHTML = "Parrafo cambiado."
+    }
+</script>
+<style>
+    .btns {
+        width: 100px;
+        button{
+            width: 100%;
+        }
+    }
+
+    body{
+        width: 100%;
+
+    }
+</style>
+<body>
+    <h2>Demo JavaScript in Body</h2>
+
+    <p id="demo"></p>
+    <p id="newDemo"></p>
+
+    <div class="btns">
+        <button type="button" onclick="myfunction()">Llama a un mensaje</button>
+        <button type="button" onclick="window.alert(5+6)">Pruebame!</button>
+        <button type="button" onclick="document.write(5 + 6)">Otro boton para probar</button>
+        <button onclick="window.print()">imprime esta pagina</button>
+    </div>
+
+    <script>
+
+        document.getElementById("demo").innerHTML = 5 + 6;
+
+        document.write(5 + 6);
+
+        console.log(5 + 6);
+
+        alert(5+6);
+
+        document.getElementById("newDemo").innerHTML = "Hello Dolly.";
+    </script>
+
+</body>
+</html>
