@@ -1,6 +1,6 @@
 body {
-    /* display: grid; */
-    /* place-items: center; */
+    display: grid;
+    place-items: center;
     margin: 0;
     margin-bottom: 40px;
     height: 100hv;
@@ -8,13 +8,19 @@ body {
     color: #fdfcfd;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
+    width: 100%;
 }
 
-body main {
+/* body main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
+} */
+
+.nav-section {
+    position: flex;
+    float: left;
 }
 
 ul {
@@ -108,10 +114,6 @@ nav {
         all 0.2s ease-in-out;
     scale: 0 0;
     visibility: hidden;
-}
-
-main .competencias, .viajes{
-    float: left;
 }
 
 main section {
@@ -241,6 +243,7 @@ footer {
     padding-bottom: 20px;
     background: #0a1435;
     color: #f9f9f9;
+    width: 100%;
 }
 
 footer article {

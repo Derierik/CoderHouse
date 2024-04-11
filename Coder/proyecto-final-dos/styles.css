@@ -1,11 +1,16 @@
 body {
-    font-family: Poppins;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:#f9f9f9;
-    /* background-image: url(./image/bg.jpg); */
+    background-color: #685f74;
 }
 
 .burger, .menu {
     position: fixed;
+}
+
+body nav {
+    display: flex;
+    height: 90px;
 }
 
 .burger{
@@ -132,23 +137,49 @@ body .main {
 
 main {
     display: flex;
-    /* grid-template-columns: 1fr 1fr; */
-    /* justify-items: stretch; */
-    flex-direction: row;
-    justify-content: space-between;
-    /* gap: 0 40px 0 30px; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0 40px 0 30px;
+}
+
+main .nav-section {
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    width: 150px;
+    height: 100px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: inline-flex;
+    /* align-self: center; */
     justify-content: center;
 }
 
-nav .logo {
-    display: inline-flex;
+.nav-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav.menu li {
+    display: inline-block;
 }
 
 .card {
+    display: flex;
+    align-items: center;
     width: 75vw;
     max-width: 650px;
-    padding: 50px 30px 50px 20px;
-    background: #121017;
+    padding: 
+        50px 30px 50px 20px;
+    background: #2d2d34;
     border-radius: 24px;
     margin-bottom: 20px;
 }
@@ -160,6 +191,44 @@ nav .logo {
     object-fit: cover;
     margin-left: -60px;
     margin-right: 30px;
+    border-style: solid;
+    border-width: 2px;
     border-radius: inherit;
+    border-top: #fff;
+    border-right: #fff;
     box-shadow: 0 60 40px rgb(0, 0, 0 / 8%);
+}
+
+.card h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.75;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    opacity: 0.5;
+}
+
+.card a {
+    display: grid;
+    place-items: center;
+    border: 0;
+    background: #6939ff;
+    color: #f8f8f8;
+    padding: 16px 16px;
+    font-size: 16px;
+    border-radius: 40px;
+    margin-bottom: 10px;
 }
