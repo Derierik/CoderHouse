@@ -107,7 +107,7 @@ nav {
 main .grid{
     display: grid;
     grid-template-columns: 50% 50%;
-    justify-content: center;
+    padding: 0 60px 0 60px;
 }
 
 .card {
@@ -120,6 +120,7 @@ main .grid{
     background: #121017;
     border-radius: 24px;
     margin-bottom: 20px;
+    margin-left: 90px;
 }
 
 .card img {
@@ -225,7 +226,7 @@ form #btn-submit {
 }
 
 footer {
-    /* position: fixed; */
+    position: static;
     margin-top: 100px;
     left: 0;
     bottom: 0;
@@ -243,7 +244,7 @@ footer article {
     justify-content: space-between;
     gap: 16px;
     padding: 20px 50px 40px;
-    margin: -99px 20px 20px;
+    margin: -100px 20px 20px;
     border-radius: 10px;
     background: linear-gradient(90deg, #773ecb, #2663ff);
 }
