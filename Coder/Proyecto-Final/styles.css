@@ -110,10 +110,6 @@ main .grid{
     justify-content: center;
 }
 
-.competencias, .viajes {
-    justify-content: center;
-}
-
 .card {
     display: flex;
     align-items: center;
