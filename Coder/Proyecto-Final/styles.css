@@ -1,26 +1,14 @@
 body {
-    display: grid;
-    place-items: center;
     margin: 0;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    justify-content: space-between;
     height: 100hv;
     background: #1a2027;
     color: #fdfcfd;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     width: 100%;
-}
-
-/* body main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-} */
-
-.nav-section {
-    position: flex;
-    float: left;
+    /* padding: 0 60px 0 60px; */
 }
 
 ul {
@@ -48,7 +36,7 @@ nav {
 
 .menu li {
     display: inline-block;
-    width: 90px;
+    width: 100px;
 }
 
 .menu li:hover .submenu{
@@ -116,8 +104,14 @@ nav {
     visibility: hidden;
 }
 
-main section {
-    height: 400px;
+main .grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+.competencias, .viajes {
+    justify-content: center;
 }
 
 .card {
