@@ -4,42 +4,89 @@ body {
     height: 100%;
 }
 
-main {
-    padding: 0 6rem 0 6rem;
+nav {
+    position: fixed;
+    margin: 100px 0 0 62px;
 }
 
+.menu {
+    list-style: none;
+}
+
+.menu a{
+    font-size: 18px;
+}
+
+.menu li:hover > a {
+    color: white;
+
+}
+
+.logo-bar{
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding: 0 4rem 0 4rem;
+}
+
+.notes {
+    text-align: justify;
+}
 .grid {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 15% 70% 15%;
 }
 
 .grid .nav {
-    display: fixed;
+    /* display: fixed; */
 }
 
 .grid .cards {
-    /* padding: 50px 30px 50px 20px; */
-    justify-content: right;
+    /* padding: 0 10px 0 40px; */
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .detail {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 650px;
+    position: relative;
+    align-items: right;
+    width: 50%;
+    /* max-width: 650px; */
     padding: 50px 30px 50px 20px;
     border-radius: 24px;
     margin-bottom: 20px;
-    background: #ffb3c6;
 }
 
-.detail .img {
-    max-width: 280px;
-    width: 35vw;
-    height: 300px;
+.detail:hover .overlay {
+    opacity: 1;
+}
+
+.detail:hover img {
+    opacity: 0.3;
+    transition: .5s  ease;
+}
+
+.detail .overlay {
+    position: absolute;
+    top: 400px;
+    bottom: 0;
+    left: 60px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    align-items: end;
+}
+
+.detail img {
+    display: block;
+    /* max-width: 300px; */
+    width: 500px;
+    height: 500px;
     object-fit: cover;
-    margin-left: -60px;
-    margin-right: 30px;
     border-radius: inherit;
     box-shadow: 0 60px 40px rgb(0, 0, 0 / 8%);
 }
@@ -53,14 +100,14 @@ main {
 }
 
 .detail h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     margin: 0;
     opacity: 0.75;
 }
 
 .detail p {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
     opacity: 0.5;
