@@ -112,7 +112,7 @@ nav img {
 main .grid{
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 100px 60px 0 60px;
+    padding: 50px 60px 0 60px;
 }
 
 .card {
