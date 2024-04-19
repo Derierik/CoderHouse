@@ -4,6 +4,10 @@
     grid-template-columns: 33% 33% 33%;
 }
 
+/* .competencias, .viajes .titulo {
+    text-align: center;
+} */
+
 .img-display{
     display: flex;
     align-items: center;
