@@ -345,17 +345,108 @@ section.bottom {
     font-size: 13px;
 }
 
-@media (width > 480px) {
-    footer article button {
-        width: 70%;
+
+@media (max-width: 390px) {
+
+    body {
+        /* scroll-snap-type: ; */
+    }
+    main .personal-bg {
+        font-size: 50px;
+        justify-content: left;
     }
 
-    section.tio ul {
-        padding-right: 10%;
+    .bg-name {
+        width: 50px;
+        margin: 20px;
     }
-}
 
-@media (width > 600px) {
+    .grid-ex {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .grid-dt {
+        display: flex;
+        align-items: center;
+        padding: 20px 0 0 0;
+        height: 100px;
+        font-size: 10px;
+    }
+
+    .grid-dt p {
+        visibility: hidden;
+        width: 0;
+        height: 1px;
+    }
+
+    .grid-dt h3 {
+        font-size: 10px;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
+    .grid-dt h6 {
+        font-size: 10px;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
+    .grid-dt div {
+        margin: 10px;
+    }
+
+    .form-acad {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .form-dt {
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 0;
+        height: 100px;
+        font-size: 10px;
+    }
+
+    .form-dt p {
+        visibility: hidden;
+        width: 0;
+        height: 1px;
+    }
+
+    .form-dt h3 {
+        font-size: 10px;
+        width: fit-content;
+        margin-top: 0;
+        margin-left: 10px;
+        top: 0;
+    }
+
+    .form-dt h6 {
+        visibility: hidden;
+    }
+
+    .form-dt div {
+        margin: 10px;
+        align-items: center;
+    }
+
+
+    .form-dt ul {
+        visibility: hidden;
+    }
+
+    .grid-dt img {
+        height: 40px;
+    }
+
+    footer h2 {
+        font-size: 10px;
+    }
+
     footer article {
         flex-direction: row;
         min-height: 140px;
@@ -365,7 +456,9 @@ section.bottom {
 
     footer article button {
         width: auto;
+        height: 20px;
         padding: 0 20px 0 24px;
+        font-size: 5px;
     }
 
     section.top ul {
@@ -373,7 +466,3 @@ section.bottom {
         padding-right: 0;
     }
 }
-
-/* input::-moz-focus-inner {
-    background: #6939ff;
-} */
