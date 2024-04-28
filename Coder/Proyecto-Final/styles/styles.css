@@ -40,6 +40,11 @@ nav img {
     padding: 10px 0 0 0;
 }
 
+nav .burger, .background, .menu-nav{
+    visibility: hidden;
+    position: fixed;
+}
+
 .menu   {
     margin: 0;
     padding-top: 25px;

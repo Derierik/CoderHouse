@@ -1,4 +1,7 @@
 *{margin: 0; padding: 0;}
+
+/* Responsive layout movil */
+
 @media (max-width: 390px) {
 
     nav {
@@ -162,7 +165,6 @@
         display: flex;
         flex-direction: column;
         padding: 0 0 0 0;
-        /* margin: 20px; */
     }
 
     .card  {
@@ -187,7 +189,7 @@
 
     .card h3 {
         font-size: 10px;
-    } 
+    }
 
     .card p {
         font-size: 8px;
@@ -196,7 +198,7 @@
     .card a {
         display: flex;
         justify-content: center;
-        height:25px;
+        height:15px;
         width: 90%;
         padding: 0 0 0 0;
         font-size: 8px;
@@ -204,16 +206,135 @@
         margin-bottom: 5px;
     }
 
-    /* .card {
-    display: flex;
-    align-items: center;
-    width: 75vw;
-    max-width: 650px;
-    padding: 
-        50px 30px 50px 20px;
-    background: #121017;
-    border-radius: 24px;
-    margin-bottom: 20px;
-    margin-left: 90px;
-} */
+    /* Menu tipo burger para vista movil */
+
+    .menu-nav{
+        position: fixed;
+    }
+
+    .background, nav .burger {
+        position: relative;
+        visibility: visible;
+    }
+
+    nav .burger {
+        z-index: 4;
+        top: 0;
+        left: 0;
+        display: grid;
+        place-items: center;
+        width: 88px;
+        height: 88px;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        cursor: pointer;
+        background-image: url(../icons/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    body.open .burger {
+        background-image: url(../icons/close.png);
+    }
+
+    .background {
+        position: fixed;
+        z-index: 2;
+        top: 44px;
+        left: 44px;
+        aspect-ratio: 1 / 1;
+        translate: -50% -50%;
+        height: 88px;
+        background: rgb(0 0 0 / 0%);
+        border-radius: 50%;
+        transition: 0.6s;
+    }
+
+    body.open .background {
+        height: 300vmax;
+        background: rgb(0 0 0 / 80%);
+    }
+
+    body.open .menu-nav {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-nav {
+        z-index: 3;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.05s;
+    }
+
+    .menu-nav nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 100px;
+    }
+
+    body .menu-nav nav:hover > a{
+        opacity: 0.25;
+    }
+
+    body .menu-nav nav > a:hover {
+        opacity: 1;
+        translate: 8px 0;
+    }
+
+    .menu-nav a {
+        position: relative;
+        color: #f9f9f9;
+        font-size: 32px;
+        padding: 20px 0 20px 0;
+        text-decoration: none;
+        opacity: 0;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .menu-nav a::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -26px;
+        translate: 0 -50%;
+        margin-top: 2px;
+        width: 10px;
+        height: 10px;
+        border-top: 
+            3px solid #fff;
+        border-right: 
+            3px solid #fff;
+        opacity: 0;
+        rotate: 45deg;
+        transition: 0.3s;
+    }
+
+    .menu-nav a:hover::after {
+        opacity: 1;
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+            transition: -30px 0;
+        }
+        100% {opacity: 1;}
+    }
+
+    body.open .menu-nav a {
+        opacity: 1;
+        animation: 
+            appear 0.25s backwards;
+    }
 }
