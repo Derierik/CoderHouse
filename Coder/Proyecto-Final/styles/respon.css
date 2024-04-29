@@ -337,4 +337,18 @@
         animation: 
             appear 0.25s backwards;
     }
+
+}
+
+/* Responsive Layout Tablet */
+
+@media (min-width: 810) and (max-width: 1080) {
+    nav {
+        display: flex;
+        text-align: right;
+    }
+
+    .personal-bg span{
+        color: black;
+    }
 }
