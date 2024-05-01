@@ -342,13 +342,63 @@
 
 /* Responsive Layout Tablet */
 
-@media (min-width: 810) and (max-width: 1080) {
+@media (min-width: 810px) and (max-width: 1080px) {
     nav {
         display: flex;
-        text-align: right;
+        width: 100%;
+
+        /* text-align: right; */
+    }
+
+    .menu li {
+        width: 100px;
+    }
+
+    main .personal-bg {
+        height: 300px;
     }
 
     .personal-bg span{
-        color: black;
+        font-size: 60px;
+        color: white;
+        padding: 0 10px 0 10px;
+        /* height: 90px; */
     }
+
+    .grid-ex, .form-acad, .soc-icon {
+        height: 250px;
+    }
+
+    .soc-icon img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .grid-dt, .form-dt {
+
+        text-align: center;
+
+        p, ul, h6{
+            visibility: hidden;  
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+
+        h4 {
+            font-size: 10px;
+        }
+
+        span {
+            font-size: 8px;
+        }
+    }
+
+    .grid-dt, .form-dt {
+        /* display: flex; */
+        justify-content: center;
+    }
+
+
 }

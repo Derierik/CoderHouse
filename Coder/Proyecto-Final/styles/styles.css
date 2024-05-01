@@ -141,7 +141,7 @@ main .personal-bg {
     align-items: center;
     font-size: 100px;
     font-weight: 400px;
-    font-family: 'Poppins';
+    font-family: 'Times New Roman', Times, serif/*'Poppins'*/;
 }
 
 .card {
