@@ -159,7 +159,7 @@
         padding-right: 0;
     }
 
-    /* cambio de pagina a galeria*/
+    /* cambio de pagina a menu de galeria*/
 
     main .grid {
         display: flex;
@@ -204,6 +204,13 @@
         font-size: 8px;
         padding: 0 0;
         margin-bottom: 5px;
+    }
+
+    /* Cambio de pagina galerias */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 90%;
     }
 
     /* Menu tipo burger para vista movil */
