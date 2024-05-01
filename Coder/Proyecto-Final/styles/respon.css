@@ -2,7 +2,7 @@
 
 /* Responsive layout movil */
 
-@media (max-width: 390px) {
+@media (min-width: 390px) and (max-width: 808px){
 
     nav {
         height: 60px;
@@ -216,11 +216,11 @@
     /* Cambio de pagina de contacto */
 
     .cont-form {
-        
+
     }
 
     label {
-        
+
     }
 
     /* Menu tipo burger para vista movil */
@@ -328,9 +328,9 @@
         margin-top: 2px;
         width: 10px;
         height: 10px;
-        border-top: 
+        border-top:
             3px solid #fff;
-        border-right: 
+        border-right:
             3px solid #fff;
         opacity: 0;
         rotate: 45deg;
@@ -351,7 +351,7 @@
 
     body.open .menu-nav a {
         opacity: 1;
-        animation: 
+        animation:
             appear 0.25s backwards;
     }
 
@@ -363,7 +363,7 @@
 
 /* Responsive Layout Tablet */
 
-@media (min-width: 810px) and (max-width: 1130px) {
+@media (min-width: 809px) and (max-width: 1130px) {
     nav {
         display: flex;
         width: 100%;
@@ -400,7 +400,7 @@
         text-align: center;
 
         p, ul, h6{
-            visibility: hidden;  
+            visibility: hidden;
         }
 
         h3 {
@@ -421,5 +421,57 @@
         justify-content: center;
     }
 
+    /* Cambio de pagina en gallery */
 
+
+    .grid {
+        display: flex;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill,
+        minmax(150px, 1fr));
+        padding-top: 10px;
+        gap: 30px;
+    }
+
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 300px;
+        height: 370px;
+        justify-content: center;
+    }
+
+    .card img {
+        margin: 0;
+        height: 200px;
+        /* padding: 0 50px 0 50px; */
+        border-radius: 20px;
+        margin-top: -100px;
+    }
+
+    .card div{
+
+        h2{
+            font-size: 20px;
+            width: max-content;
+        }
+
+        h3{
+            font-size: 14px;
+        }
+
+        p{
+            visibility: hidden;
+            height: 0;
+            width: 0;
+            font-size: 14px;
+        }
+
+        a{
+            height: 6px;
+        }
+    }
+    
 }
