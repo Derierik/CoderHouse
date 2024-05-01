@@ -338,11 +338,15 @@
             appear 0.25s backwards;
     }
 
+    .titulo {
+        visibility: hidden;
+    }
+
 }
 
 /* Responsive Layout Tablet */
 
-@media (min-width: 810px) and (max-width: 1080px) {
+@media (min-width: 810px) and (max-width: 1130px) {
     nav {
         display: flex;
         width: 100%;
