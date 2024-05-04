@@ -216,46 +216,71 @@
     .grid-container {
         display: grid;
         grid-template-columns: 90%;
+        margin: 0;
     }
 
-    /* Cambio de pagina de contacto */
+    .img-display{
+        width: 70%;
+        height: fit-content;
+    }
 
-    /* main form {
-        width: 100%;
-        display: grid;
+    /* Formulario de contacto */
+
+    .form {
+        margin-left: 10px;
         justify-content: center;
-    } */
+        display: flex;
+    }
 
     form {
-        width: 100%;
+        width: 80%;
+
+        label{
+            width: 100%;
+        }
+
+        input{
+            width: 100%;
+        }
+
+        select{
+
+        }
+
+        textarea{
+            width: 100%;
+        }
+
+        #btn-submit{
+
+        }
+    }
+
+    /* Responsive Blogs */
+
+    section h1 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .grid-media {
+        display: grid;
         justify-content: center;
-    }
+        width: 90%;
+        margin: 10px;
 
-    form h1 {
-        width: 50%;
-
-    }
-
-    form input {
-        width: 100%;
-
-    }
-
-    form label {
-        width: 100%;
-    }
-
-    form select {
-        width: 100%;
-    }
-
-    form textarea {
-        width: 100%;
-    }
-
-    form #btn-submit {
+        .media-v{
+            video{
+                width: 70%;
+                height: 190px;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
 
     }
+
     /* Menu tipo burger para vista movil */
 
     .menu-nav{
