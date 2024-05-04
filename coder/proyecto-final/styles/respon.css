@@ -4,6 +4,11 @@
 
 @media (min-width: 390px) and (max-width: 808px){
 
+    hr{
+        visibility: hidden;
+    }
+
+
     nav {
         height: 60px;
     }
@@ -215,14 +220,42 @@
 
     /* Cambio de pagina de contacto */
 
-    .cont-form {
+    /* main form {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    } */
+
+    form {
+        width: 100%;
+        justify-content: center;
+    }
+
+    form h1 {
+        width: 50%;
 
     }
 
-    label {
+    form input {
+        width: 100%;
 
     }
 
+    form label {
+        width: 100%;
+    }
+
+    form select {
+        width: 100%;
+    }
+
+    form textarea {
+        width: 100%;
+    }
+
+    form #btn-submit {
+
+    }
     /* Menu tipo burger para vista movil */
 
     .menu-nav{

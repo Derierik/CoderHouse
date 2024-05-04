@@ -26,7 +26,7 @@ ul {
 nav {
     display: flex;
     width: 100%;
-    box-shadow: 
+    box-shadow:
         0 0 10px
         rgb(0, 0, 0 / 8%);
     justify-content: space-between;
@@ -82,7 +82,7 @@ nav .burger, .background, .menu-nav{
     height: 0;
     line-height: 40px;
     box-sizing: border-box;
-    transition: 
+    transition:
         height 0.3s
         ease-in-out;
 }
@@ -116,7 +116,7 @@ nav .burger, .background, .menu-nav{
     bottom: 3px;
     left: 0px;
     background: #3e95ff;
-    transition: 
+    transition:
         all 0.2s ease-in-out;
     scale: 0 0;
     visibility: hidden;
@@ -149,7 +149,7 @@ main .personal-bg {
     align-items: center;
     width: 75vw;
     max-width: 650px;
-    padding: 
+    padding:
         50px 30px 50px 20px;
     background: #121017;
     border-radius: 24px;
@@ -165,7 +165,7 @@ main .personal-bg {
     margin-left: -60px;
     margin-right: 30px;
     border-radius: inherit;
-    box-shadow: 
+    box-shadow:
         0 60px 40px
         rgb(0, 0, 0 / 8%);
 }
@@ -209,60 +209,62 @@ main .personal-bg {
     padding-top: 40px;
     height: 100px;
     display: flex;
-    justify-content: 
+    justify-content:
         center;
     align-items: stretch;
     height: 70px;
 }
 
-main form {
-    margin-left: 35%;
-    height: 700px;
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 form {
-    width: 550px;
+    width: 50%;
     display: grid;
-}
 
-form h1 {
-    text-align: center;
-}
+    h1{
+        text-align: center;
+    }
 
-form input {
-    width: 550px;
-    margin-bottom: 10px;
-    height: 40px;
-    border-radius: 35px;
-    text-align: center;
-    background: #000;
-    border-style: none;
-    color: #fff;
-}
+    label{
+        font-size: 18px;
+        font-weight: 100;
+        margin-top: 20px;
+    }
 
-form select {
-    width: 557px;
-    height: 40px;
-    border-radius: 35px;
-    text-align: center;
-    background: #000;
-    color: #fff;
-    border-style: none;
-}
+    input{
+        background-color: #000;
+        border: none;
+        border-radius: 20px;
+        height: 30px;
+        color: #fff;
+        text-align: center;
+    }
 
-form textarea {
-    width: 554px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border-radius: 20px;
-    background: #000;
-    border-style: none;
-    resize: none;
-    color: white;
-}
+    select{
+        background-color: #000;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        text-align: center;
+        height: 30px;
+    }
 
-form #btn-submit {
-    width: 100%;
+    textarea{
+        background-color: #000;
+        border-radius: 20px;
+        border: none;
+        resize: none;
+    }
+
+    #btn-submit{
+        color: #fff;
+        margin-top: 20px;
+    }
 }
 
 footer {
