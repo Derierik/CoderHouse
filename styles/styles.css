@@ -454,7 +454,7 @@ main h2 {
     
 }
 
-@media (max-width: 390px) {
+@media (max-width: 808px) {
     .soc-icon {
         display: flex;
         justify-content: space-evenly;
@@ -522,20 +522,15 @@ main h2 {
         margin: 20px;
     }
 
-    /* .grid-ex, .form-acad {
-        padding: 10px 10px 0 10px;
-    } */
-
-    .grid-ex {
-        display: grid;
-        grid-template-columns: 100%;
-        
+    .grid-ex, .form-acad {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
     }
 
     .grid-dt {
         display: flex;
         align-items: center;
-        height: 100px;
         font-size: 10px;
 
         img {
@@ -544,7 +539,7 @@ main h2 {
         }
 
         p{
-            visibility: hidden;
+            display: none;
             width: 1px;
             height: 1px;    
         }
@@ -564,24 +559,11 @@ main h2 {
     
         }
 
-        div{
-            margin: 10px;
-            display: flex;
-            flex-direction: column;
-            text-align: justify;    
-        }
-    }
-
-    .form-acad {
-        display: grid;
-        grid-template-columns: 100%;
-        
     }
 
     .form-dt {
         display: flex;
         align-items: center;
-        height: 100px;
         font-size: 10px;
 
         img {
@@ -604,13 +586,8 @@ main h2 {
         }
 
         h6{
-            visibility: hidden;
+            display: none;
 
-        }
-
-        div{
-            margin: 10px;
-            align-items: center;
         }
 
         ul{
@@ -655,35 +632,35 @@ main h2 {
         padding: 0 0 0 0;
     }
 
-    .card  {
+    .cards  {
         margin-left: 20px;
         width: 300px;
         height: 150px;
     }
 
-    .card div {
+    .cards div {
         padding: 0 0 0 15px;
     }
 
-    .card img {
+    .cards img {
         height: 60px;
         width: 60px;
         margin: 0;
     }
 
-    .card h2 {
+    .cards h2 {
         font-size: 14px;
     }
 
-    .card h3 {
+    .cards h3 {
         font-size: 10px;
     }
 
-    .card p {
+    .cards p {
         font-size: 8px;
     }
 
-    .card a {
+    .cards a {
         display: flex;
         justify-content: center;
         height:15px;
