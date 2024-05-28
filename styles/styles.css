@@ -178,29 +178,29 @@ main .personal-bg {
     }
 
     h3 {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
-    opacity: 0.75;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        opacity: 0.75;
     }
 
     p {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 30px;
-    opacity: 0.5;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        opacity: 0.5;
     }
 
     a {
-    display: grid;
-    place-items: center;
-    border: 0;
-    background: #6939ff;
-    color: #f8f8f8;
-    padding: 16px 16px;
-    font-size: 16px;
-    border-radius: 40px;
-    margin-bottom: 10px;
+        display: grid;
+        place-items: center;
+        border: 0;
+        background: #6939ff;
+        color: #f8f8f8;
+        padding: 16px 16px;
+        font-size: 16px;
+        border-radius: 40px;
+        margin-bottom: 10px;
     }
 }
 
@@ -334,7 +334,7 @@ section.bottom {
     flex-direction: row;
     grid-template-columns: 33% 33% 33%;
     /* grid-template-rows: auto; */
-    padding: 0 50px 0 50px;
+    padding: 0 0 0 0;
 
     .grid-dt, .form-dt {
         padding: 0 0 0 0;
@@ -412,10 +412,6 @@ main h2 {
     
 }
 
-@media (max-width: 808px) {
-
-
-}
 
 /* Responsive layout movil */
 
@@ -428,6 +424,7 @@ main h2 {
 
     nav {
         height: 60px;
+        padding: 0 0 0 0;
     }
 
     nav a img {
@@ -678,8 +675,8 @@ main h2 {
         left: 0;
         display: grid;
         place-items: center;
-        width: 88px;
-        height: 88px;
+        width: 60px;
+        height: 60px;
         border: 0;
         padding: 0;
         background: transparent;
