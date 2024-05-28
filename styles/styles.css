@@ -434,7 +434,7 @@ main h2 {
 
 /* Responsive layout movil */
 
-@media (min-width: 480px) and (max-width: 834px){
+@media (min-width: 390px) and (max-width: 834px){
 
     hr{
         visibility: hidden;
