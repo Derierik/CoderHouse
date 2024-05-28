@@ -464,73 +464,82 @@ main h2 {
     .grid-dt {
         display: flex;
         align-items: center;
-        font-size: 10px;
+        font-size: 13px;
+        margin: 0 0 0 20px;
 
-        img {
-            height: 35px;
-            width: 35px;
+        div{
+            padding: 0 0 0 10px;
+            img {
+                height: 40px;
+                width: 40px;
+            }
+    
+            p{
+                display: none;
+                width: 1px;
+                height: 1px;    
+            }
+    
+            h3{
+                /* font-size: 10px; */
+                width: fit-content;
+                margin-top: 0;
+                margin-left: 0px;  
+                top: 0;  
+            }
+    
+            h6{
+                /* font-size: 10px; */
+                width: 100%;
+                margin-top: 0;
+                margin-left: 15px;
+                visibility: hidden;
+            }
         }
-
-        p{
-            display: none;
-            width: 1px;
-            height: 1px;    
-        }
-
-        h3{
-            font-size: 10px;
-            width: fit-content;
-            margin-top: 0;
-            margin-left: 10px;  
-            top: 0;  
-        }
-
-        h6{
-            font-size: 10px;
-            width: 100%;
-            margin-top: 0;
-            margin-left: 15px;
-            visibility: hidden;
-        }
-
     }
 
     .form-dt {
         display: flex;
         align-items: center;
-        font-size: 10px;
+        font-size: 13px;
+        margin: 0 0 0 20px;
 
-        img {
-            height: 35px;
-            width: 35px;
-        }
+        div {
 
-        p{
-            visibility: hidden;
-            width: 1;
-            height: 1px;
-        }
+            padding: 0 0 0 10px;
 
-        h3{
-            font-size: 10px;
-            width: fit-content;
-            margin-top: 0;
-            margin-left: 10px;
-            top: 0;
-        }
-
-        h6{
-            font-size: 10px;
-            width: 100%;
-            margin-top: 0;
-            margin-left: 15px;
-            visibility: hidden;
-        }
-
-        ul{
-            visibility: hidden;
-            width: 1px;
-            height: 1px;
+            img {
+                height: 40px;
+                width: 40px;
+            }
+    
+            p{
+                visibility: hidden;
+                width: 1;
+                height: 1px;
+            }
+    
+            h3{
+                /* font-size: 10px; */
+                width: fit-content;
+                margin-top: 0;
+                /* margin-left: 10px; */
+                top: 0;
+            }
+    
+            h6{
+                /* font-size: 10px; */
+                width: 100%;
+                margin-top: 0;
+                margin-left: 15px;
+                visibility: hidden;
+            }
+    
+            ul{
+                visibility: hidden;
+                width: 1px;
+                height: 1px;
+            }
         }
     }
 
@@ -966,8 +975,8 @@ main h2 {
         left: 0;
         display: grid;
         place-items: center;
-        width: 88px;
-        height: 88px;
+        width: 0;
+        height: 0;
         border: 0;
         padding: 0;
         background: transparent;
