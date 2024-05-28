@@ -349,9 +349,6 @@ section.bottom {
 main h2 {
     padding: 20px;
 }
-
-
-
 .grid-dt img {
     background: #fff;
     border-radius: 100%;
@@ -380,6 +377,17 @@ main h2 {
     width: 48px;
 }
 
+.contact-form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    form{
+        width: 30%;
+        max-width: 45%;
+    }
+}
+
+
 .soc-icon {
     display: flex;
     justify-content: space-evenly;
@@ -405,30 +413,7 @@ main h2 {
 }
 
 @media (max-width: 808px) {
-    .soc-icon {
-        display: flex;
-        justify-content: space-evenly;
-        height: 100px;
-    }
 
-    .soc-icon div:hover {
-        padding: 0 0 0 0;
-    }
-
-    .soc-icon div {
-        display: flex;
-        padding: 0 0 0 0;
-        width: 35px;
-        height: 35px;
-        border-radius: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .soc-icon div img {
-        height: 35px;
-        width: 35px;
-    }
 
 }
 
@@ -476,6 +461,7 @@ main h2 {
         display: flex;
         flex-direction: column;
         height: 300px;
+        width: 100%;
     }
 
     .grid-dt {
@@ -507,7 +493,7 @@ main h2 {
             width: 100%;
             margin-top: 0;
             margin-left: 15px;
-    
+            visibility: hidden;
         }
 
     }
@@ -541,6 +527,7 @@ main h2 {
             width: 100%;
             margin-top: 0;
             margin-left: 15px;
+            visibility: hidden;
         }
 
         ul{
@@ -639,25 +626,13 @@ main h2 {
 
     /* Formulario de contacto */
 
-    .form {
-        margin-left: 10px;
-        justify-content: center;
+    .contact-form {
+        text-align: center;
         display: flex;
-    }
-
-    form {
-        width: 80%;
-
-        label{
-            width: 100%;
-        }
-
-        input{
-            width: 100%;
-        }
-
-        textarea{
-            width: 100%;
+        justify-content: center;
+        width: 100%;
+        form{
+            width: 50%;
         }
     }
 
@@ -822,6 +797,31 @@ main h2 {
         visibility: hidden;
     }
 
+    .soc-icon {
+        display: flex;
+        justify-content: space-evenly;
+        height: 100px;
+    }
+
+    .soc-icon div:hover {
+        padding: 0 0 0 0;
+    }
+
+    .soc-icon div {
+        display: flex;
+        padding: 0 0 0 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .soc-icon div img {
+        height: 35px;
+        width: 35px;
+    }
+
 }
 
 /* Responsive Layout Tablet */
@@ -939,4 +939,176 @@ main h2 {
             height: 690px;
         }
     }
+
+    /* Pagina de Contacto */
+
+    .contact-form {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        form{
+            width: 50%;
+        }
+    }
+
+    /* burger para tablet */
+
+    .menu-nav{
+        position: fixed;
+    }
+
+    .background, nav .burger {
+        position: relative;
+        visibility: visible;
+    }
+
+    nav .burger {
+        z-index: 4;
+        top: 0;
+        left: 0;
+        display: grid;
+        place-items: center;
+        width: 88px;
+        height: 88px;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        cursor: pointer;
+        background-image: url(../icons/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    body.open .burger {
+        background-image: url(../icons/close.png);
+    }
+
+    .background {
+        position: fixed;
+        z-index: 2;
+        top: 44px;
+        left: 44px;
+        aspect-ratio: 1 / 1;
+        translate: -50% -50%;
+        height: 88px;
+        background: rgb(0 0 0 / 0%);
+        border-radius: 50%;
+        transition: 0.6s;
+    }
+
+    body.open .background {
+        height: 300vmax;
+        background: rgb(0 0 0 / 80%);
+    }
+
+    body.open .menu-nav {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-nav {
+        z-index: 3;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.05s;
+    }
+
+    .menu-nav nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 100px;
+    }
+
+    body .menu-nav nav:hover > a{
+        opacity: 0.25;
+    }
+
+    body .menu-nav nav > a:hover {
+        opacity: 1;
+        translate: 8px 0;
+    }
+
+    .menu-nav a {
+        position: relative;
+        color: #f9f9f9;
+        font-size: 32px;
+        padding: 20px 0 20px 0;
+        text-decoration: none;
+        opacity: 0;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .menu-nav a::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -26px;
+        translate: 0 -50%;
+        margin-top: 2px;
+        width: 10px;
+        height: 10px;
+        border-top:
+            3px solid #fff;
+        border-right:
+            3px solid #fff;
+        opacity: 0;
+        rotate: 45deg;
+        transition: 0.3s;
+    }
+
+    .menu-nav a:hover::after {
+        opacity: 1;
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+            transition: -30px 0;
+        }
+        100% {opacity: 1;}
+    }
+
+    body.open .menu-nav a {
+        opacity: 1;
+        animation:
+            appear 0.25s backwards;
+    }
+
+    /* Barra de socials */
+
+    .soc-icon {
+        display: flex;
+        justify-content: space-evenly;
+        height: 150px;
+    }
+
+    .soc-icon div:hover {
+        padding: 0 0 0 0;
+    }
+
+    .soc-icon div {
+        display: flex;
+        padding: 0 0 0 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .soc-icon div img {
+        height: 40px;
+        width: 40px;
+    }
+
 }
