@@ -141,6 +141,11 @@ main .personal-bg {
     font-size: 100px;
     font-weight: 400px;
     font-family: 'Poppins';
+
+    h1{
+        font-size: 100px;
+
+    }
 }
 
 .cards {
@@ -447,6 +452,10 @@ main h2 {
     main .personal-bg {
         font-size: 50px;
         justify-content: left;
+
+        h1{
+            font-size: 60px;
+        }
     }
 
     .bg-name {
@@ -828,6 +837,10 @@ main h2 {
 
     main .personal-bg {
         height: 300px;
+        h1{
+            font-size: 90px;
+    
+        }
     }
 
     .personal-bg span{
