@@ -464,11 +464,9 @@ main h2 {
     .grid-dt {
         display: flex;
         align-items: center;
-        font-size: 13px;
+        font-size: 12px;
         margin: 0 0 0 20px;
-
         div{
-            padding: 0 0 0 10px;
             img {
                 height: 40px;
                 width: 40px;
@@ -483,15 +481,10 @@ main h2 {
             h3{
                 /* font-size: 10px; */
                 width: fit-content;
-                margin-top: 0;
-                margin-left: 0px;  
-                top: 0;  
             }
     
             h6{
                 /* font-size: 10px; */
-                width: 100%;
-                margin-top: 0;
                 margin-left: 15px;
                 visibility: hidden;
             }
@@ -503,11 +496,7 @@ main h2 {
         align-items: center;
         font-size: 13px;
         margin: 0 0 0 20px;
-
         div {
-
-            padding: 0 0 0 10px;
-
             img {
                 height: 40px;
                 width: 40px;
@@ -522,15 +511,10 @@ main h2 {
             h3{
                 /* font-size: 10px; */
                 width: fit-content;
-                margin-top: 0;
-                /* margin-left: 10px; */
-                top: 0;
             }
     
             h6{
                 /* font-size: 10px; */
-                width: 100%;
-                margin-top: 0;
                 margin-left: 15px;
                 visibility: hidden;
             }
